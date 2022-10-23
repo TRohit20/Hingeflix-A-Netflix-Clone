@@ -1,3 +1,6 @@
+import firebase from 'firebase';
+
+
 const firebaseConfig = {
     apiKey: "AIzaSyCIFU5LjFmINSfzC0B5rOMKx_-MBs3i4-s",
     authDomain: "hingeflix-netflix-clone.firebaseapp.com",
@@ -7,3 +10,9 @@ const firebaseConfig = {
     appId: "1:845280879416:web:2c90853e8a744b18bc17cd"
   };
   
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebaseApp.firestore();
+const auth = firebase.auth();
+
+export {auth};
+export default db;
