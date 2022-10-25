@@ -1,28 +1,28 @@
 import React,{ useRef } from 'react';
-import { auth } from '../fbase';
+// import { auth } from '../fbase';
 import './SignupScreen.css';
 
 
 function SignupScreen() {
-    const emailRef = useRef(null);
-    const passwordRef = useRef(null);
+    // const emailRef = useRef(null);
+    // const passwordRef = useRef(null);
 
 
-    const register = (e) => {
-        e.preventDefault();
-        auth.createUserWithEmailandPassword(
-            emailRef.current.value,
-            passwordRef.current.value
-        ).then((authUser) => {
-            console.log(authUser)
-        }).catch(error => {
-            alert(error.message);
-        });
-    };
+    // const register = (e) => {
+    //     e.preventDefault();
+    //     auth.createUserWithEmailandPassword(
+    //         emailRef.current.value,
+    //         passwordRef.current.value
+    //     ).then((authUser) => {
+    //         console.log(authUser)
+    //     }).catch(error => {
+    //         alert(error.message);
+    //     });
+    // };
 
-    const signIn = (e) => {
-        e.preventDefault();
-    };
+    // const signIn = (e) => {
+    //     e.preventDefault();
+    // };
   return (
     <div className='signupScreen'>
         <form>
