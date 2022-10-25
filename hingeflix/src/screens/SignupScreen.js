@@ -1,6 +1,5 @@
-import React, { useRef } from 'react';
-// import { auth } from '../firebase';
-import { auth } from '../firebase';
+import React,{ useRef } from 'react';
+import { auth } from '../fbase';
 import './SignupScreen.css';
 
 
@@ -28,13 +27,13 @@ function SignupScreen() {
     <div className='signupScreen'>
         <form>
             <h1>Sign In</h1>
-            <input ref={emailRef} placeholder='Email Address' type="email"/>
-            <input ref={passwordRef} placeholder='password' type="password"/>
-            <button onClick={signIn}
+            <input  placeholder='Email Address' type="email"/>
+            <input  placeholder='password' type="password"/>
+            <button 
             type='submit'>Sign In</button>
             <h4>
             <span className='signupScreen_gray'>New to Netflix? </span>
-            <span onClick={register}
+            <span 
             className='singupScreen_link'> Sign Up Now! </span>
             </h4>
         </form>
