@@ -32,8 +32,11 @@ Feel free to contribute in any way you wish to. Steps to follow to contribute:
 --> Fork the repository 
 
 --> You can clone the project directly using Github Desktop or the link to your local directory
+
 --> Create a new branch and make changes to it.
+
 --> Raise an issue mentioning the changes you plan to make, discuss and upon approval
+
 --> Open a pull request mentioning the Issue Number it closes. 
 
 Thank you!🙌
